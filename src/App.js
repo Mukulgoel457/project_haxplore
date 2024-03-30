@@ -11,8 +11,9 @@
 s */
 //import SignUp from "./pages/ ";
 import LoginPage from "./pages/login_integrate";
-import RegisterPage from "./pages/register";
+//import RegisterPage from "./pages/register";
 import { Routes, Route } from 'react-router-dom';
+import RegisterPage from "./pages/register";
 
 const  App = ()=>{
  /*  const action = useNavigationType();
@@ -56,12 +57,13 @@ const  App = ()=>{
     // <RegisterPage/>
   // <LoginPage/>
 
-   <Routes>
+    <Routes>
    <Route path='/' element={<LoginPage />} />
    <Route path='/register' element={<RegisterPage />} />
-   </Routes>
+   </Routes> 
+  //  <RegisterPage/>
  
-  
+   
  
   );
 }

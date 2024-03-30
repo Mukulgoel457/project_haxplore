@@ -38,12 +38,12 @@ const Onclickhandler = ()=>{
     }
   };
 
-  const divStyle = {
+  const DivStyle = {
     backgroundColor: '#eeeedd',
   };
 
   return (
-    <div style={divStyle}>
+    <div style={DivStyle}>
       <h1 className="flex justify-center font-serif text-gray-600">
         ONLINE DARSHAN BOOKING SYSTEM
       </h1>
