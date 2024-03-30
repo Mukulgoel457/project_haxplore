@@ -1,13 +1,20 @@
-import { useEffect } from "react";
-import {
+//import { useEffect } from "react";
+/* import {
   Routes,
   Route,
   useNavigationType,
   useLocation,
-} from "react-router-dom";
-import SignUp from "./pages/SignUp";
+} from "react-router-dom"; */
+/* import SignUp from "./pages/SignUpfront_end";
 
-function App() {
+
+s */
+//import SignUp from "./pages/ ";
+import LoginPage from "./pages/login_integrate";
+import RegisterPage from "./pages/register";
+import { Routes, Route } from 'react-router-dom';
+
+const  App = ()=>{
  /*  const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -45,10 +52,26 @@ function App() {
  */
   return (
 
-    <SignUp/>
-   /*  <Routes>
-      <Route path="/" element={<SignUp />} />
-    </Routes> */
+    // <SignUp/>
+    // <RegisterPage/>
+  // <LoginPage/>
+
+   <Routes>
+   <Route path='/' element={<LoginPage />} />
+   <Route path='/register' element={<RegisterPage />} />
+   </Routes>
+ 
+  
+ 
   );
 }
 export default App;
+
+/* 
+<Router>
+<Switch>
+  <Route exact path="/" component={LoginPage} />
+
+
+  </Switch>
+ </Router> */
