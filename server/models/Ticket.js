@@ -29,9 +29,6 @@ const TicketSchema = new mongoose.Schema({
     }
     //date
     //members
-        
-    
-    
     
     // Additional fields can be added here as needed
 });

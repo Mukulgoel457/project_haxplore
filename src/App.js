@@ -15,6 +15,8 @@ import LoginPage from "./pages/login_integrate";
 import { Routes, Route } from 'react-router-dom';
 import RegisterPage from "./pages/register";
 import HomePage from "./pages/home";
+import Book from "./pages/Booking/book";
+
 
 const  App = ()=>{
  /*  const action = useNavigationType();
@@ -62,11 +64,11 @@ const  App = ()=>{
    <Route path='/' element={<LoginPage />} />
    <Route path='/register' element={<RegisterPage />} />
    <Route path='/home' element={<HomePage />} />
+   <Route path='/bookingsystem' element={<Book />} />
    </Routes> 
    
-    //<HomePage/>
- 
- 
+
+//  <Book/>
   );
 }
 export default App;
@@ -79,3 +81,5 @@ export default App;
 
   </Switch>
  </Router> */
+
+ //<Route path='/bookingpage' element={<Book />} />

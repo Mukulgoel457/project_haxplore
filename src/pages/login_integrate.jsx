@@ -17,6 +17,7 @@ const Onclickhandler = ()=>{
   const Handlesubmit = async (e) => {
 
     e.preventDefault();
+    // localStorage.removeItem('token');
 
     try {
       const response = await fetch('http://localhost:5000/api/v1/auth/login', {
@@ -26,15 +27,19 @@ const Onclickhandler = ()=>{
         },
         body: JSON.stringify({ email, password })
       });
-
+       
       if (!response.ok) {
         throw new Error('Login failed');
       }
-      // const {token} = response.json()
-      // console.log(token)
-      // localStorage.setItem('token', token)
+     const data=await response.json();
       // Handle successful login
       console.log('Login successful');
+
+   
+      console.log(data);
+      // console.log(token)
+      localStorage.setItem('token', data.token)
+      
       navigate('/home')
 
     } catch (error) {

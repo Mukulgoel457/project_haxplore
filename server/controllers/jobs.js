@@ -25,8 +25,10 @@ const Ticket = require('../models/Ticket')
 
 const createTicket = async (req, res) => {
   req.body.userId = req.user.userId
+ 
   const ticket = await Ticket.create(req.body)
   res.status(StatusCodes.CREATED).json({ ticket })
+  
 }
 const getTicket = async (req, res) => {
 
