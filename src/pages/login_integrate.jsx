@@ -9,6 +9,8 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  // localStorage.removeItem('token')
+
 const Onclickhandler = ()=>{
     navigate('/register');
 }
@@ -28,10 +30,12 @@ const Onclickhandler = ()=>{
       if (!response.ok) {
         throw new Error('Login failed');
       }
-
+      // const {token} = response.json()
+      // console.log(token)
+      // localStorage.setItem('token', token)
       // Handle successful login
       console.log('Login successful');
-      
+      navigate('/home')
 
     } catch (error) {
       console.error('Error during login:', error.message);

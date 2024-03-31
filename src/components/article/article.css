@@ -1,0 +1,86 @@
+.temple__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #885f31;
+    padding: 1rem 10rem;
+}
+
+.temple__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.temple__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.temple__navbar-links_logo img {
+    width: 82.56px;
+    height: 80.02px;
+}
+
+.temple__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 5rem;
+}
+
+.temple__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.temple__navbar-links_container p,
+.temple__navbar-sign p,
+.temple__navbar-menu_container p {
+    color: #EEEEDD;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.temple__navbar-sign button,
+.temple__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    .temple__navbar-links_container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .temple__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .temple__navbar {
+        padding: 2rem;
+    }
+
+    .temple__navbar-sign {
+        display: none;
+    }
+}

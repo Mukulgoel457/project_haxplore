@@ -1,0 +1,112 @@
+.temple__header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.temple__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+     
+    margin-right: 5rem;
+}
+
+.temple__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.temple__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1rem;
+}
+
+.temple__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.temple__header-content__people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+.temple__header-content__people p {
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: (-color-text);
+    text-align: center;
+}
+
+.temple__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temple__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .temple__header {
+        flex-direction: column;
+    }
+
+    .temple__header-content {
+        margin: 3rem 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .temple__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .temple__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .temple__header-content__people {
+        flex-direction: column;
+    }
+
+    .temple__header-content__people p {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .temple__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .temple__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
