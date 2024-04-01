@@ -6,8 +6,8 @@ const Footer = () => (
     <div className="temple__footer-heading">
       <h1 className="gradient__text">
         <h5>Contact Us-:</h5>
-        <h5>Address: Crechterwoord K12 182 DK Alknjkcb</h5>
-        <h5>Phone No.-: 085-132567</h5>
+        <h5>Address: Girnar Gujarat</h5>
+        <h5>Phone No.-: 91-XXXXXXXXXX</h5>
         <h5>Email ID-: info@payme.net</h5>
         </h1>
     </div>

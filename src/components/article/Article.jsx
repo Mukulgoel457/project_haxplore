@@ -14,7 +14,7 @@ const Article = () => {
         </div>
         <div className="temple__navbar-links_container">
           <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">Booking System</a></p>
+          <p><a href="/bookingsystem">Booking System</a></p>
           <p><a href="#possibility">Transaction History</a></p>
           <p><a href="#blog">About Us</a></p>
           <p><a href="#down">Contact Us</a></p>

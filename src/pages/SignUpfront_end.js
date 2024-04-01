@@ -16,7 +16,7 @@ const SignUp = () => {
     <div style={divStyle}>
       <h1 className="flex justify-center font-serif text-gray-600">ONLINE DARSHAN BOOKING SYSTEM</h1>
   
-    <div class="container flex justify-center mt-16 mx-auto background-color:#eeeedd">
+    <div class=" w-full flex justify-center mt-16  background-color:#eeeedd">
         <div class="left ">
             <img className="w-full justify-normal"src={temple} alt="temple"/>
         

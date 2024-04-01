@@ -57,30 +57,30 @@ const Onclickhandler = ()=>{
         ONLINE DARSHAN BOOKING SYSTEM
       </h1>
 
-      <div className="container flex justify-center mt-16 mx-auto background-color:#eeeedd">
+      <div className="w-full  flex justify-center  mx-auto background-color:#eeeedd">
         <div className="left ">
-          <img className="w-full justify-normal" src={temple} alt="temple" />
+          <img className=" justify-normal  " src={temple} alt="temple" />
         </div>
-        <div className="right w-1/3 flex flex-col p-9 justify-center border border-gray-300">
+        <div className="right w-1/2 flex flex-col p-9 justify-center border border-gray-300">
           <h1 className="flex justify-center font-serif text-gray-600">LOGIN</h1>
           <form onSubmit={Handlesubmit}>
             <input
               type="text"
-              className="w-82 h-6 px-4 py-2 mb-2 rounded-md border border-1 flex align-middle justify-normal"
+              className="w-72 h-10 px-4 py-2 mb-2 rounded-md border border-1 flex align-middle justify-center"
               placeholder="Enter your email address or phone number"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
-              className="w-82 h-6 px-4 py-2 mb-2 rounded-md border border-1 flex align-middle justify-center"
+              className="w-72 h-10 px-4 py-2 mb-2 rounded-md border border-1 flex align-middle justify-center"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
               type="submit"
-              className="bg-yellow-900 hover:bg-yellow-950 rounded sm w-82 py-2 text-white h-10 text-sm"
+              className="bg-yellow-900 hover:bg-yellow-950 rounded sm  w-36 py-2 text-white h-10 text-sm justify-center "
             >
               Log In
             </button>

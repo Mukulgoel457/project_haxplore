@@ -2,7 +2,9 @@ const Job = require('../models/Job')
 const { StatusCodes } = require('http-status-codes')
 const { BadRequestError, NotFoundError } = require('../errors')
 const Ticket = require('../models/Ticket')
-
+//const { accessSync } = require('fs')
+//const puppeteer=require('puppeteer ')
+//const path=require('path');
 // const getAllJobs = async (req, res) => {
 //   const jobs = await Job.find({ createdBy: req.user.userId }).sort('createdAt')
 //   res.status(StatusCodes.OK).json({ jobs, count: jobs.length })
@@ -81,10 +83,42 @@ const getAllTicket = async (req, res) => {
 //   res.status(StatusCodes.OK).send()
 // }
 
+// const generateReport=async(req,res)=>{
+
+//   try{
+//     const browser= await puppeteer.launch ();
+//     const page= await browser.newPage();
+//    await page.goto('http://localhost:3000/bookingsystem',{
+//     waitUntil:"networkidle2"
+//    }) ;    //change later
+    
+//    page.setViewport({ width:1680 ,height:1050});
+
+//    const pdfn= await page.pdf({
+//     path:`${path.join(__dirname,'../src/pages/downloads'+".pdf")}`,
+//     format: A4
+//    });
+// await browser.close();
+
+// const pdfURL=path.join(__dirname,'../src/pages/downloads'+".pdf")
+// res.set({
+//   "Content-Type":"application/pdf",
+//   "Content-Length":pdfn.length
+// });
+// res.sendfile(pdfURL);
+
+
+//   }catch(error){
+//     console.log(error.message)
+//   }
+
+  
+//};
 module.exports = {
   createTicket,
 getAllTicket,
-getTicket 
+getTicket ,
+
 //   updateJob,
 //   getJob,
 }

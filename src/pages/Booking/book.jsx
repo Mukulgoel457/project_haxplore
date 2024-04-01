@@ -69,7 +69,7 @@ const Book = () => {
 
     
       console.log("Booking successful");
-      navigate("/home");
+      navigate("/invoice");
     } catch (error) {
       console.error("Error during booking:", error.message);
     }

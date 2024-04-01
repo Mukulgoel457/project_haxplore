@@ -16,6 +16,8 @@ import { Routes, Route } from 'react-router-dom';
 import RegisterPage from "./pages/register";
 import HomePage from "./pages/home";
 import Book from "./pages/Booking/book";
+import SignUp from "./pages/SignUpfront_end";
+import Invoice from "./pages/INVOICE";
 
 
 const  App = ()=>{
@@ -65,8 +67,9 @@ const  App = ()=>{
    <Route path='/register' element={<RegisterPage />} />
    <Route path='/home' element={<HomePage />} />
    <Route path='/bookingsystem' element={<Book />} />
+   <Route path='/invoice' element={<Invoice />} />
    </Routes> 
-   
+  // <SignUp/>
 
 //  <Book/>
   );
