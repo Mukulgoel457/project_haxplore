@@ -1,31 +1,107 @@
+# Online Temple Booking System
 
-  # ONLINE TEMPLE BOOKING SYSTEM
-  
+## Overview
 
-This project is basically about an online temple booking system;
+The Online Temple Booking System is a web-based application designed to facilitate the booking of temple visits and events. Users can log in, register, book visits, and read blogs about temple events. The system ensures secure and efficient booking management for both users and administrators.
 
-Login Page
+## Features
 
-The User first lands on to the login page where he opens the website.
-If the user has already logged in then he can log in to the home page by entering valid credentials;
-Or else the user can click on to the register button to get him registered;
+- **User Authentication:** Secure login and registration system.
+- **Booking System:** Users can book tickets for temple visits by providing necessary details.
+- **Blogs:** Temple admins can post blogs and images about temple events and updates.
+- **Invoice Generation:** After booking, users receive an invoice with their booking details.
 
+## Getting Started
 
-Register Page
+### Prerequisites
 
-The user can register himself by entering valid credentials (we have put a check on it);
+- Node.js
+- npm (Node Package Manager)
+- MongoDB
 
+### Installation
 
-Home Page
-The Home Page consists of the main Header where there are buttons for Home Page, Booking System and Blogs;
+#### 1. Clone the repository:
 
-Blogs->   The temple admin can put up blogs and images about the new events happening in the temple;
+    git clone https://github.com/Mukulgoel457/project_haxplore.git
+    cd project_haxplore
 
-Booking System->   If the user wants to book a ticket that he can click onto the book button and he will be directed to the booking page;
+#### 2. Install the server dependencies and start the server:
 
+    cd server
+    npm install
+    npm start
 
-Booking Page
+#### 3. Set up the database connection:
 
-The user has to enter valid credentials like his name, email (given earlier) number of members they want and the date for which they want to book darshan
-On successful booking the user will be directed to invoice of the ticket.
+- Import `connect.js` and invoke it in `start()`.
+- Create a `.env` file in the root and add your MongoDB URI:
 
+    MONGO_URI=your_mongodb_uri
+
+### Running the Application
+
+Start the server as described in the installation steps. Open another terminal, navigate to the root of the project, and start the client:
+
+    cd src
+    npm install
+    npm start
+
+Access the application at `http://localhost:3000`.
+
+## Usage
+
+### Login Page
+
+Users land on the login page upon visiting the website. Existing users can log in with their credentials, while new users can register.
+
+### Register Page
+
+New users can register by providing valid credentials.
+
+### Home Page
+
+The home page includes the main header with navigation buttons for the home page, booking system, and blogs.
+
+### Booking Page
+
+Users can book a ticket by providing necessary details such as name, email, number of members, and booking date. Upon successful booking, an invoice is generated.
+
+## Server Details
+
+### Routes
+
+- `auth.js`: Handles user authentication (register, login).
+- `jobs.js`: Manages ticket-related operations.
+
+### Controllers
+
+- `auth.js`: Contains functions for registering and logging in users.
+- `jobs.js`: Contains functions for creating and fetching tickets.
+
+### Middleware
+
+- `authentication.js`: Middleware for authenticating users.
+- `error-handler.js`: Handles errors.
+- `not-found.js`: Handles 404 errors.
+
+### Models
+
+- `User.js`: Defines the User schema.
+- `Job.js`: Defines the Job schema.
+- `Ticket.js`: Defines the Ticket schema.
+- `Invoice.js`: Defines the Invoice schema.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for review.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+For more information and detailed documentation, please visit the [project documentation](https://docs.askthecode.ai).
+
+---
